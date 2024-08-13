@@ -1,0 +1,8 @@
+<div class="w-75 p-3">
+  <h1><%= @task.title %></h1>
+  <p class="bg-light border border-secondary rounded" style="height: 100px"><%= @task.details %></p>
+  <p><%= @task.completed %></p>
+
+  <%= link_to "Back to list", tasks_path, class: "btn btn-primary" %>
+  <%= link_to "Edit task", edit_task_path(@task), class: "btn btn-secondary" %>
+</div>
